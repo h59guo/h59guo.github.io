@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Derrick's little world - my skills</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+</head>
+<body>
+<!-- head -->
+<div class="container-fluid">
+    <div class="row bgimgup">
+        <div class="col-md-7">
+            <h1 id="title2"><big><strong><big><big>Derrick's little world</big></big></strong></big></h1>
+        </div>
+        <div class="col-md-2">
+          <img src="http://cou.on.ca/wp-content/uploads/2015/04/University-of-Waterloo.png" style="width: 100%">
+        </div>
+        <div class="col-md-3">
+          <h2>I have been living: </h2>
+          <p id="demo"></p>
+        </div>
+    </div>
+</div>
+
+<!-- head over -->
+<!-- navigator -->
+<div id="btbar" class="text-center container-fluid">
+        <div class="row">
+            <!-- HTML for SEARCH BAR -->
+           <div class="nav col-md-9">
+             <ul>
+                <li style="width: 16%"><a href="index.html">About me</a></li>
+                <li style="width: 16%"><a href="HTML.html">My skills</a>
+                  <ul style="position: absolute;">
+                    <li><a href="HTML.html">Web</a></li>
+                    <li><a href="C.html">C/C++</a></li>
+                    <li><a href="time.html">Management</a></li>
+                  </ul>
+                </li>
+                <li style="width: 16%"><a href="life.html">My life path</a></li>
+                <li style="width: 16%"><a href="https://www.uwaterloo.ca">My Favoriate!</a>
+                  <ul>
+                    <li><a href="http://www.nba.com/raptors/?splash=off">Go Raptors!</a></li>
+                    <li><a href="https://www.linkedin.com/feed/">LinkedIn!</a></li>
+                    <li><a href="https://www.youtube.com/user/HISHEdotcom">YouTuber!</a></li>
+                  </ul>
+                </li>
+                <li style="width: 16%"><a href="hobbies.html">My hobbies</a></li>
+              </ul>
+    </div>
+
+                        <!-- HTML for SEARCH BAR -->
+            <form class="myform" action="https://www.google.ca/search?" method="get">
+                    <div class="myformcont">
+                        <input name="q" value="site:weforshe.ga" type="text" placeholder="Go for it" required style="width:60%">
+                        <button class="btncol" type="submit" value="Search" style="width:30%">Search</button>
+                    </div>
+                </form>
+        </div>
+    </div>
+
+<!-- navigator ends -->
+<!-- content starts -->
+
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="img/xian.jpg" style="width:100%; height: 700px">
+      <div class="text thediv" style="color: white">
+      <p><big><strong>I like travelling!</strong></big></p>
+      </div>
+    </div>
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 4</div>
+    <img src="img/CIF.jpeg" style="width:100%; height: 700px">
+    <div class="text thediv" style="color: white">
+    <p><big><strong>I like travelling!</strong></big></p>
+    </div>
+  </div>
+</div>
+
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 4</div>
+    <img src="img/banff.JPG" style="width:100%; height: 700px">
+    <div class="text thediv" style="color: white">
+    <p><big><strong>I like travelling!</strong></big></p>
+    </div>
+  </div>
+</div>
+
+  <div class="mySlides fade" id="superman">
+    <div class="numbertext">4 / 4</div>
+    <img src="img/superman.jpeg" style="width:100%">
+    <div class="text thediv">
+    <p><big><strong> I am a Coder!</strong></big></p>
+    </div>
+  </div>
+
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+
+<!-- content ends -->
+<!-- footer starts -->
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12" id="footer">
+            Designed by Haowei Guo, all rights reserved.
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var slideIndex = 1;
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+
+    window.onload = function () {
+        showSlides(slideIndex);
+    };
+
+//here starts the timer
+    var countDate = new Date("May 22, 1998 22:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now an the count down date
+  var distance = now - countDate;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("demo").style.fontSize = "x-large";
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
+  + minutes + "mins " + seconds + "s ";
+
+}, 1000);
+</script>
+<!-- footer ends -->
+</body>
+</html>
