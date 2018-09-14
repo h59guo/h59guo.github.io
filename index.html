@@ -1,198 +1,606 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Derrick's little world - my skills</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
-</head>
-<body>
-<!-- head -->
-<div class="container-fluid">
-    <div class="row bgimgup">
-        <div class="col-md-7">
-            <h1 id="title2"><big><strong><big><big>Derrick's little world</big></big></strong></big></h1>
-        </div>
-        <div class="col-md-2">
-          <img class="img-responsive" src="http://cou.on.ca/wp-content/uploads/2015/04/University-of-Waterloo.png" style="width: 100%">
-        </div>
-        <div class="col-md-3">
-          <h2>I have been living: </h2>
-          <p id="demo"></p>
-        </div>
-    </div>
-</div>
+<html lang="en-US" class="no-js">
+	<head>
 
-<!-- head over -->
-<!-- navigator -->
-<div id="btbar" class="text-center container-fluid">
-        <div class="row">
-            <!-- HTML for SEARCH BAR -->
-           <div class="nav col-md-9">
-             <ul>
-                <li style="width: 16%"><a href="index.html">About me</a></li>
-                <li style="width: 16%"><a href="HTML.html">My skills</a>
-                  <ul style="position: absolute;">
-                    <li><a href="HTML.html">Web</a></li>
-                    <li><a href="C.html">C/C++</a></li>
-                    <li><a href="time.html">Management</a></li>
-                    <li><a href="iOS.html">iOS</a></li>
-                  </ul>
-                </li>
-                <li style="width: 16%"><a href="life.html">My life path</a></li>
-                <li style="width: 16%"><a href="https://www.uwaterloo.ca">My Favoriate!</a>
-                  <ul>
-                    <li><a href="http://www.nba.com/raptors/?splash=off">Go Raptors!</a></li>
-                    <li><a href="https://www.linkedin.com/feed/">LinkedIn!</a></li>
-                    <li><a href="https://www.youtube.com/user/HISHEdotcom">YouTuber!</a></li>
-                  </ul>
-                </li>
-                <li style="width: 16%"><a href="hobbies.html">My hobbies</a></li>
-              </ul>
-    </div>
-
-                        <!-- HTML for SEARCH BAR -->
-            <form class="myform" action="https://www.google.ca/search?" method="get">
-                    <div class="myformcont">
-                        <input name="q" type="text" placeholder="Go for it" required style="width:60%">
-                        <button class="btncol" type="submit" value="Search" style="width:30%">Search</button>
-                    </div>
-                </form>
-        </div>
-    </div>
-
-<!-- navigator ends -->
-<!-- content starts -->
-
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <img  src="img/YellowKnife.jpg" style="width:100%; height: 700px">
-    <div class="text thediv" style="color: white">
-    <p><strong>Aurora Borealis! @YellowKnife!</strong></p>
-    </div>
-  </div>
-</div>
-
-<div class="row">
-  <div class="col-md-1"></div>
-  <div class="slideshow-container">
-    <div class="mySlides fade">
-      <div class="numbertext">2 / 4</div>
-      <img class="img-responsive" src="img/xian.JPG" style="width:100%; height: 700px">
-      <div class="text thediv" style="color: white">
-      <p><strong>The palace!@XiAn!</strong></p>
-      </div>
-    </div>
-    <div class="col-md-1"></div>
-  </div>
-</div>
+		<!-- ==============================================
+		Title and Meta Tags
+		=============================================== -->
+		<meta charset="utf-8">
+		<title>Derrick Guo's little Site</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-    <img class="img-responsive" src="img/volunteer.JPG" style="width:100%; height: 700px">
-    <div class="text thediv" style="color: white">
-    <p><strong>@Uwaterloo Fall open house volunteering!</strong></p>
-    </div>
-  </div>
-</div>
+		<!-- ==============================================
+		Favicons
+		=============================================== -->
+		<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 
-<div class="slideshow-container">
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <img class="img-responsive" src="img/banff.JPG" style="width:100%; height: 700px">
-    <div class="text thediv" style="color: white">
-    <p><strong>Rocky Mountain!@Banff</strong></p>
-    </div>
-  </div>
-</div>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon"> 
+		
+		<!-- ==============================================
+		CSS
+		=============================================== -->    
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.css">
+		<link rel="stylesheet" href="css/flexslider.css">
+		<link rel="stylesheet" href="css/meflat-green.css">
+		<link rel="stylesheet" href="css/custom.css">
+
+		<!-- ==============================================
+		Google Icons
+		=============================================== -->   
+
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		
+		<!-- ==============================================
+		Fonts
+		=============================================== -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300,300italic,200,400italic,600,600italic' rel='stylesheet' type='text/css'>
+		
+		<!-- ==============================================
+		JS
+		=============================================== -->
+			
+		<!--[if lt IE 9]>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+		
+		<script type="text/javascript" src="js/libs/modernizr.min.js"></script>
+		
+		
+	</head>
+  
+	<body data-spy="scroll" data-target="#main-nav" data-offset="400">
+		<!-- ==============================================
+		MAIN NAV
+		=============================================== -->
+		<div id="main-nav" class="navbar navbar-fixed-top">
+			<div class="container">
+			
+				<div class="navbar-header">
+				
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#site-nav">
+						<span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					</button>
+					
+					<!-- ======= LOGO (for small screens)========-->
+					<a class="navbar-brand visible-xs scrollto" href="#home">DG</a>
+					
+				</div>
+				
+				<div id="site-nav" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#about" class="scrollto">About Me</a>
+						</li>
+						<li>
+							<a href="#skills" class="scrollto">Skills</a>
+						</li>
+						<li id="logo">
+							<a href="#home" class="scrollto">
+								<h1>D<span>G</span></h1>
+							</a>
+						</li>
+						<li>
+							<a href="#portfolio" class="scrollto">Projects</a>
+						</li>
+						<li>
+							<a href="#contact" class="scrollto">Contacts</a>
+						</li>
+					</ul>
+				</div><!--End navbar-collapse -->
+				
+			</div><!--End container -->
+			
+		</div><!--End main-nav -->
+		
+		<!-- ==============================================
+		HEADER
+		=============================================== -->
+		<header id="home" class="jumbotron">
+		
+			<div class="container">
+			
+				<div class="row">
+				
+					<div class="col-sm-6 text-col">
+					
+						<h1>Hi, I am</h1>
+						<h1><strong>Derrick</strong> Guo</h1>
+
+						<br><br>
+
+						<br>
+
+							<div id="resumeBorder">
+								<a id="resumeLink" style="color: black; font-size: 35px; text-align: center;" href="resources/derrick_guo_resume.pdf" target="_blank">Resume <i class="fa fa-file-text-o" style="font-size: 1em"></i></a>
+							</div>
+						
+					</div>
+					
+					<div class="col-sm-6">
+						<div class="imac-frame">
+							<img class="img-responsive img-center" src="assets/imac.png" alt=""/>
+							<div class="imac-screen flexslider">
+								<ul class="slides">
+									<li>
+										<img src="images/flat1.png" alt="Falt Design patterns"/>
+									</li>
+									<li>
+										<img src="images/flat2.png" alt="Falt Design patterns"/>
+									</li>
+									<li>
+										<img src="images/flat3.png" alt="Falt Design patterns"/>
+									</li>
+									<li>
+										<img src="images/flat7.png" alt="Falt Design patterns"/>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+
+			
+		</header><!--End header -->
+
+
+		<!-- ==============================================
+		ABOUT
+		=============================================== -->	
+		<section id="about" class="dark-bg light-typo padding-top-bottom">
+		
+			<div class="container">
+			
+				<header class="section-header text-center">
+				
+					<h1 class="scrollimation scale-in">About Me</h1>
+				
+				</header>
+				
+				<div class="row">
+				
+					<div class="col-sm-8 col-sm-offset-2">
+					
+						<img class="img-responsive img-center img-circle scrollimation fade-left" src="assets/photo.png" alt="" />
+				
+						<p class="text-center scrollimation fade-in">Derrick is a Computer Science &amp; Statistics double major student at University of Waterloo. He is passionate about exploring technologies and programming languages, and experienced in OOP languages such as C++ and Java. His favorate areas of CS are algorithms, compilers, and front-end UI development.</p>
+					
+					</div>
+					
+				</div>
+
+			</div>
+		
+		</section>
+
+			
+
+		<!-- ==============================================
+		SKILLS
+		=============================================== -->	
+
+
+		<section id="skills" class="white-bg">
+		
+			<div class="container">
+			
+				<div class="row skills">
+					
+					<h1 class="text-center scrollimation fade-in">Technical Skills</h1>
+
+					<br><br>
+
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="75"><i class="fa fa-desktop fa-3x"></i></span>
+						<h2 class="text-center">Platforms</h2>
+						<p>
+                			<i class="fa fa-linux"></i>
+                			Linux
+              			</p>
+              			<p>
+                			<i class="fa fa-apple"></i>
+                			MacOS 
+              			</p>
+              			<p>
+                			<i class="fa fa-windows"></i>
+                			Windows
+              			</p>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="80"><i class="fa fa-code fa-3x"></i></span>
+						<h2 class="text-center">Programming</h2>
+						<p><i class="material-icons" style="font-size: 3em">code</i>
+						<p>C/C++</p>
+                        <p>Javascript</p>
+                        <p>Java</p>
+						<p>Matlab</p>
+						<p>R</p>
+						<br>
+						<p><i class="fa fa-globe fa-2x"></i></p>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>C#</p>
+                        <p>Swift</p>
+						<br>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="85"><i class="fa fa-cog fa-spin fa-3x fa-fw"></i></span>
+						<h2 class="text-center">Tools</h2>
+						<p><i class="fa fa-wrench fa-2x" aria-hidden="true"></i></p>
+						<p>Xcode 8</p>
+                        <p>Unity</p>
+						<br>
+						<p>
+							<span class="fa-stack fa-lg">
+  							<i class="fa fa-square fa-stack-2x"></i>
+  							<i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+							</span>
+						</p>
+						<p>Terminal</p>
+                        <p>Bash</p>
+						<br>
+						<p><i class="material-icons" style="font-size: 2em">mode_edit</i></p>
+						<p>Vim</p>
+                        <p><span class="latex">L<sup>a</sup>T<sub>e</sub>X</span></p>
+						<p>Sublime Text</p>
+                        <p>Brackets</p>
+					</div>
+					<div class="col-sm-6 col-md-3 text-center">
+						<span class="chart" data-percent="85"><i class="fa fa-code-fork fa-3x"></i></span>
+						<h2 class="text-center">Version Control</h2>
+						<i class="fa fa-git" aria-hidden="true" style="font-size: 2em"></i>
+					</div>
 
 
 
 
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+					
+				</div><!--End row -->
+			
+			</div>
+		
+		
+		</section>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-</div>
+		
 
-<!-- content ends -->
-<!-- footer starts -->
-<hr>
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-md-12" id="footer">
-            Designed by Haowei Guo, all rights reserved.
-        </div>
-    </div>
-</div>
+		
+ 		<!-- ==============================================
+		PORTFOLIO
+		=============================================== -->	
+		<section id="portfolio" class="gray-bg padding-top-bottom">
+			
+			<div class="container">
+			
+				<header class="section-header text-center">
+				
+					<h1 class="scrollimation scale-in">My Works</h1>
+					
+				</header>
+				
+				<!--==== Portfolio Filters ====-->
+				<div id="filter-works">
+					<ul>
+						<li class="active scrollimation fade-right d1">
+							<a href="#" data-filter="*">All</a>
+						</li>
+						<li class="scrollimation fade-right">
+							<a href="#" data-filter=".web-design">IOS Apps</a>
+						</li>
+						<li class="scrollimation fade-left">
+							<a href="#" data-filter=".icons">Web Development</a>
+						</li>
+					</ul>
+				</div><!--End portfolio filters -->
+				
+			</div><!--End portfolio header -->
+			
+			<div class="container masonry-wrapper scrollimation fade-in">
+			
+				<div id="projects-container">
+				
+					<!-- ==============================================
+					SINGLE PROJECT ITEM
+					=============================================== -->	
+					<article class="project-item web-design">
+						
+						<img class="img-responsive project-image" src="images/spread.png"  alt="demo of my flapy bird game clone"><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Spread Clone</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description" 
+							data-category="Game Development" 
+							data-date="Jan 2018" 
+							data-link="Github,https://github.com/h59guo/Zombie-Game" 
+							data-descr="" 
+							data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"
+						>
+						
+							<p>A Zombie fighting human game built using Unity and C#</p>
+							
+							<img class="img-responsive project-image" src="images/spreaddemo.png"  alt="Demo of my Spread game game">
+						</div>
+						
+					</article>
+					<!-- ==============================================
+					END PROJECT ITEM
+					=============================================== -->						
+					
+					<article class="project-item icons">
+						
+						<img class="img-responsive project-image" src="images/website.jpg"  alt="personal website logo"><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Personal Website</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description" 
+							data-category="Personal Website" 
+							data-date="Sep 2018" 
+							data-link="Github,https://github.com/h59guo/h59guo.github.io" 
+							data-descr="" 
+							data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"
+						>
+							<p>A simple website about myself hosted on Github</p>
+							<p>Built with HTML, CSS3, jQuery, and JavaScript</p>
+							<br>
+							<img src="assets/photo.png" alt="My Website">
+							
+						</div>
+						
+					</article><!--End Project Item -->
 
-<script type="text/javascript">
-    var slideIndex = 1;
+					<article class="project-item web-design">
+						
+						<img class="img-responsive project-image" src="images/tictactoe.jpg"  alt="Demo of my weather app"><!--Project thumb -->
+						
+						<div class="hover-mask">
+							<h2 class="project-title">Tic Tac Toe</h2><!--Project Title -->
+							<p>Details</p><!--Project Subtitle -->
+						</div>
+						
+						<!--==== Project Preview HTML ====-->
+						
+						<div class="sr-only project-description" 
+							data-category="tic-tac-toe" 
+							data-date="Oct 2017" 
+							data-link="Github,https://github.com/h59guo/tic-tac-toe" 
+							data-descr="" 
+							data-images="assets/placeholder-750x430.jpg,assets/placeholder-750x430.jpg"
+						>
+							
+							<p>A tic-tac-toe game app on IOS platform built with Swift3</p>
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
+							<img src="images/tictactoedemo.jpg" alt="Demo of tic-tac-toe App">
+						</div>
+						
+					</article><!--End Project Item -->
 
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
+					
 
-    function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-             slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-             dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
+					
+						
+				</div><!-- End projects --> 
+				
+			</div><!-- End container --> 
+			
+			<!-- ==============================================
+			PROJECT PREVIEW MODAL (Do not alter this markup)
+			=============================================== -->	
+			<div id="project-modal" class="modal fade">
+			
+				<div class="modal-dialog">
+				
+					<div class="modal-content">
+					
+						<div class="modal-header">
+						
+							<div class="container">
+							
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color: firebrick; font-size: 80px">&times;</button>
+								
+								<h1 id="hdr-title" class="text-center"></h1>
+								<div class="row">
+									<div class="col-md-8 col-md-offset-2">
+										<div class="image-wrapper">
+											<div class="loader"></div>
+											<div class="screen"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+						
+						<div class="modal-body">
+							<div class="container">
+								<div class="row">
+									<div id="project-sidebar" class="col-md-3">
+										<h2 id="sdbr-title"></h2>
+										<p id="sdbr-category"></p>
+										<p id="sdbr-date"></p>
+										<p id="sdbr-client"></p>
+										<p id="sdbr-link"><a href="#link" target="_blank"></a></p>
+										<p id="sdbr-descr"></p>
+									</div>
+									<div id="project-content" class="col-md-8 col-md-offset-1">
+									</div>
+								</div>
+								
+							</div>
+						</div><!-- End modal-body -->
+						
+					</div><!-- End modal-content -->
+					
+				</div><!-- End modal-dialog -->
+				
+			</div><!-- End modal -->
+			
+		</section>
 
-    window.onload = function () {
-        showSlides(slideIndex);
-    };
 
-//here starts the timer
-    var countDate = new Date("May 22, 1998 22:37:25").getTime();
+				<!-- ==============================================
+		SERVICES
+		=============================================== -->
+		<section id="services" class="white-bg padding-top-bottom">
+		
+			<div class="container">
+				
+				<header class="section-header text-center">
+				
+					<h1 class="scrollimation scale-in">What I Do</h1>
+					<p></p>
+				
+				</header>
+			
+				<div class="row services">
+				
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up">
+					
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service1.png" alt="" />
+						</div>
+						
+						<h2>Web Development</h2>
+						<p>Derrick has experience in building UI using JavaScript when he worked at SAP Canada as a internship student. Web Developement became one of his favorite since then.</p>
+					
+					</div>
+					
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d1">
+					
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service2.png" alt="" />
+						</div>
+						
+						<h2>OOP Programming</h2>
+						<p>To be honest, C++ is my favorate language. I developed most of my projects in C++, like CC3K and WLM compilers in CS246 &amp; CS241.</p>
+					
+					</div>
+					
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d2">
+					
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service3.png" alt="" />
+						</div>
+						
+						<h2>Cooking</h2>
+						<p>Derrick is good at western &amp; eastern cooking. He started cooking for parents and friends many years ago. Maybe Derrick should be a chef.</p>
+					
+					</div>
+					
+					<div class="col-md-3 col-sm-6 item scrollimation fade-up d3">
+					
+						<div class="icon">
+							<img class="img-responsive img-center" src="assets/service4.png" alt="" />
+						</div>
+						
+						<h2>Travel</h2>
+						<p>Derrick has been to 3 countries and more than thirty cities from North Pole to equator. Adventure is worthwhile. </p>
+					
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</section>
 
-// Update the count down every 1 second
-var x = setInterval(function() {
 
-  // Get todays date and time
-  var now = new Date().getTime();
+		<!-- ==============================================
+		CONTACT
+		=============================================== -->	
+		<section id="contact" class="dark-bg light-typo"  style="padding: 0px;">
+		
+			<div class="container">
 
-  // Find the distance between now an the count down date
-  var distance = now - countDate;
+				
+                <a href="tel:+1-555-555-1212" style="color: white; padding: 20px 0 0 0;"><i class="fa fa-phone" aria-hidden="true"></i> +1-647-868-5401</a>
+				
+                <p><a style="color: white" href="mailto:webmaster@example.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> h59guo@edu.uwaterloo.ca</a></p>
 
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  document.getElementById("demo").style.fontSize = "x-large";
+                <div style="float: left; padding-right: 10px; color: cornsilk"><h4>Follow me <i class="fa fa-exclamation" aria-hidden="true"></i><i class="fa fa-exclamation" aria-hidden="true"></i><i class="fa fa-exclamation" aria-hidden="true"></i></h4></div>
+                <div class="bounce" style="float: left;"><i class="fa fa-arrow-down fa-lg"></i></div>
 
-  // Display the result in the element with id="demo"
-  document.getElementById("demo").innerHTML = days + "days " + hours + "hours "
-  + minutes + "mins " + seconds + "s ";
 
-}, 1000);
-</script>
-<!-- footer ends -->
-</body>
+				
+			</div>
+
+
+		
+		</section>
+
+
+		
+		<!-- ==============================================
+		FOOTER
+		=============================================== -->	
+		
+		<footer id="main-footer" class="dark-bg light-typo">
+		
+			<div class="container">
+			
+				<hr>
+				
+				<div class="row">
+				
+					<div class="col-sm-6" style="position: center;">
+						<ul class="social-links">
+							<li class="scrollimation fade-right d4"><a href="https://github.com/h59guo" target="_blank"><i class="fa fa-github fa-fw"></i></a></li>
+							<li class="scrollimation fade-right d3"><a href="https://www.linkedin.com/in/derrick-guo-b1a278140/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+							<li class="scrollimation fade-right d2"><a href="https://www.facebook.com/profile.php?id=100010567729317" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+						</ul>
+					</div>
+
+					<div class="col-sm-6 text-right">
+						<p>&copy;2018 by <span id="nameFooter">Derrick Guo</span></p>
+				    </div>
+					
+				</div>
+				
+			</div>
+			
+		</footer>
+		
+		
+		<!-- ==============================================
+		SCRIPTS
+		=============================================== -->	
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/libs/jquery-1.9.1.min.js">\x3C/script>')</script>
+		
+		<script src="js/libs/bootstrap.min.js"></script>
+		<script src='js/jquery.easing.1.3.min.js'></script>
+		<script src='js/jquery.scrollto.js'></script>
+		<script src="js/jquery.fittext.js"></script>
+		<script src='js/jquery.flexslider.min.js'></script>
+		<script src='js/jquery.masonry.js'></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.label_better.min.js"></script>
+		<script src="js/jquery.easypiechart.js"></script>
+		<script src="js/contact.js"></script>
+		<script src="js/meflat.js"></script>
+    <script>
+        
+    </script>
+		
+	</body>
+	
 </html>
