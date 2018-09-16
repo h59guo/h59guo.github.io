@@ -595,9 +595,13 @@
 		<script src="js/jquery.easypiechart.js"></script>
 		<script src="js/contact.js"></script>
 		<script src="js/meflat.js"></script>
-    <script>
-        
-    </script>
+	    <script>
+	        var resumeBorder = document.getElementById('resumeBorder');
+	        resumeBorder.on('click touchstart', function () {
+                window.open('resources/derrick_guo_resume.pdf', '_blank', 'fullscreen=yes'); 
+                return false;
+            });
+	    </script>
 		
 	</body>
 	
